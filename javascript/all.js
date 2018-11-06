@@ -12,7 +12,7 @@ document.querySelector("button").addEventListener("click",function (){
 // call sever to get name;
 
 
-$ajaxutils.sendGetRequest("data\name.json",function (res){
+$ajaxutils.sendGetRequest("/data/name.json",function (res){
 
 
 var message= res.firstname+""+ res.lastname;
