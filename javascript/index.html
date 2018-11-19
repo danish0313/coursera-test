@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en" ng-app="myfirstapp">
+  <head>
+    <title>Lunch Checker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+<script src="angular.min.js"></script>
+<script src="app.js"></script>
+    <style>
+      .message { font-size: 1.3em; font-weight: bold; }
+
+
+      .btn-info{
+        
+margin-left:15px;
+
+
+      }
+
+
+      body{
+        
+background-color:rgb(21, 53, 27);
+
+      }
+
+
+li{
+  
+margin:10px;
+
+}
+.col-sm-4{
+  color:white;
+  
+background-color:grey;
+  border-radius:100px;
+  margin-left:10px;
+
+}
+.col-sm-12{
+border-radius:100px;
+  
+background-color:grey;
+height:auto;
+
+
+}
+.form-control{
+  
+border-radius:40px;
+
+width:300px;
+
+
+}
+
+
+.btn-primary{
+  
+
+margin-top:12px;
+margin-bottom:10px
+
+}
+
+.col-sm-6{
+  margin-left:200px;
+  border-radius:100px;
+  
+  height:500px;
+background-color:brown;
+
+}
+
+.btn-info{
+  
+
+background-color:rgb(21, 53, 27);
+border:none;
+
+margin-left:120px;
+}
+
+.btn-info:hover{
+  transition:all 2s;
+  padding:15px;
+  color:white;
+  background-color:black;
+}
+
+
+
+.table{
+  
+  color:black;
+ 
+}
+tr, th{
+   border:2px solid black;
+}
+
+    </style>
+  </head>
+<body>
+   <div class="container-fluid">
+     <h1 style="color:white;margin-left:70px;">Lunch Checker</h1>
+<!--
+
+<ul>
+
+<li ng-repeat="item in shopping1 | filter: search"> {{$index+ 1 }} {{item}} </li>
+
+</ul>
+
+<ul>
+
+<li ng-repeat="item in shopping2"> {{item.name}} buy{{item.quantaty}}  </li>
+
+</ul>
+
+           
+         </div>
+         <div class="form-group message">
+
+         <input type="text" placeholder="enter your order!" ng-model="enteritem" class="form-control" style="width:400px;">
+          <input type="text" placeholder="enter your order!" ng-model="enterquantaty" class="form-control" style="width:400px;">
+           <button class="btn btn-info" class="text-center" style="margin-left:100px;margin-top:20px;" ng-click="add();"> add it</button>
+  {{name}}
+
+ <input type="text" placeholder="enter your order!" ng-model="search" class="form-control" style="width:400px;">
+
+ -->
+
+
+
+<div class="row" ng-controller="controller1 as parent" >
+
+
+<div class="col-sm-4" >
+<center>
+<form class="form-horizental">
+<b>ENTER YOUR MEAL:</b>   <input type="text" class="form-control" ng-model="item"><br>
+<b>ENTER YOUR QUANTITY:</b><input type="text" class="form-control" ng-model="quantity">
+
+
+<button class="btn btn-primary" ng-click="show();">   ADD TO SHOPPING LIST! </button>
+
+</form>
+</center>
+
+<div class="col-sm-12">  
+
+
+<h1>  shopping cart!</h1>
+
+
+<table class="table">
+
+<tr>
+<th> NAME OF PRODUCTS</th>
+<th> ADDING TO CART!</th>
+
+</tr>
+</table>
+<ol>
+
+<li ng-repeat="data in items">{{data.name}} {{data.quantity}}<center> <button class="btn btn-info" ng-click="removes($index);">BUY IT !</button></center> <br>
+
+</li>
+
+</ol>
+
+
+</div>
+
+</div>
+
+
+
+<div class="col-sm-6" ng-controller="controller2 as child">
+
+<h1 style="text-align:center;color:white;">CHECKING YOUR CART!</h1>
+</div>
+
+         </div>
+   </div>
+
+</body>
+
+<script> 
+
+
+
+
+ </script>
+</html>
