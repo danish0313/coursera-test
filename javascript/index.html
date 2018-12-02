@@ -67,7 +67,7 @@ margin-bottom:10px
 .col-sm-6{
   margin-left:200px;
   border-radius:100px;
-  
+  box-size: border-box;
   height:500px;
 background-color:brown;
 
@@ -83,9 +83,10 @@ margin-left:120px;
 }
 
 .btn-info:hover{
+
   transition:all 2s;
-  padding:15px;
   color:white;
+  transform:translateY(-15px);
   background-color:black;
 }
 
@@ -134,7 +135,7 @@ tr, th{
 
 
 
-<div class="row" ng-controller="controller1 as parent" >
+<div class="row" ng-controller="controller1" >
 
 
 <div class="col-sm-4" >
@@ -178,9 +179,20 @@ tr, th{
 
 
 
-<div class="col-sm-6" ng-controller="controller2 as child">
+<div class="col-sm-6" style="color:white;font-size:26px;">
 
 <h1 style="text-align:center;color:white;">CHECKING YOUR CART!</h1>
+
+
+
+<ol>
+
+<li ng-repeat="data in itemss"> {{data.name}} {{data.quantity}}
+
+</li>
+
+</ol>
+
 </div>
 
          </div>

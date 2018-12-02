@@ -23,14 +23,17 @@ var array =[{
 }];
 
 
-angular.module('myfirstapp',[]).controller('controller1',controller1).controller('controller2',controller2);
+var array2=[];
+
+
+angular.module('myfirstapp',[]).controller('controller1',controller1);
 
 controller1.$inject= ['$scope'];
 
 function controller1($scope) {
 
-
-$scope.items= array;
+$scope.itemss = array2;
+$scope.items = array;
 
 $scope.show = function (){
 	
@@ -41,28 +44,13 @@ $scope.show = function (){
 
 $scope.removes = function (index){
 	
- var date = remove(index, $scope.items);
+ var date = remove(index , $scope.items, $scope.itemss);
 
 
 };
 
 
 };
-
-
-controller2.$inject=['$scope'];
-
-
-function controller2($scope) {
-$scope.items= array;
-
-
-
-
-};
-
-
-
 
 
 
@@ -86,17 +74,26 @@ return items;
 
 
 
-function remove(index,items){
+function remove(index,items,itemss){
+
+
+itemss.push(items[index]);
+
+
 
 items.splice(index, 1);
 
-
 return items;
 
-
-
+return itemss;
 
 }
+
+
+
+
+
+
 
 
 
