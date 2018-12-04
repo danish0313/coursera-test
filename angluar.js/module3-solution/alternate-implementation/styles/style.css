@@ -1,0 +1,44 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    font-family: 'Rock Salt',cursive;
+    font-size: 8rem;
+}
+.form-inline .input-group {
+    display: inline-flex;
+}
+.form-inline .input-group>.form-control.search-box{
+    width: 500px;
+    max-width: 95%;
+}
+thead {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.item.item-name {
+    font-weight: bold;
+}
+.item.item-description {
+    font-style: italic;
+}
+.item-price {
+    text-align: center;
+}
+.search-form {
+    margin-top: 4rem;
+    text-align: center;
+}
+.error {
+    max-width: 300px;
+    margin: 2rem auto;
+    text-align: center;
+}
+.results-table {
+    margin-top: 4rem;
+}
+@media screen and (max-width:720px){
+    h1 {
+        font-size: 4rem;
+    }
+}
