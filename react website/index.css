@@ -1,0 +1,227 @@
+
+.back {
+
+background: #833ab4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+
+
+
+
+.col-sm-12{
+
+	padding-bottom: 100px;
+background: #833ab4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+text-align: center;
+
+
+}
+
+
+.avatar{
+
+width:200px;
+height:200px;
+
+margin-top:50px;
+
+
+
+}
+
+
+.box{
+
+width:75%;
+
+background-color: black;
+
+border-radius: 10px;
+
+opacity: .8;
+
+margin: auto;
+
+color: white;
+
+}
+
+.projects-grid{
+
+display: flex;
+
+
+}
+
+.box hr{
+
+
+border-top: 5px dotted white;
+
+width:50%;
+
+margin: auto;
+
+
+}
+
+
+.box p{
+
+
+margin:10px;
+
+
+
+}
+
+
+.social {
+
+width: 50%;
+margin:auto;
+display: flex;
+
+justify-content: space-between;
+
+
+}
+
+
+.social i{
+font-size: 50px;
+
+color: white;
+
+
+}
+
+
+
+
+/* contact page  */
+
+
+.contact-body {
+
+margin: auto;
+
+position: fixed;
+width:100%;
+height: 100%;
+justify-content: center;
+padding-top:2em;
+
+
+}
+
+
+
+/* contact grid  */
+.contact-grid{
+
+text-align: center;
+justify-content: center;
+width:80%;
+height: 550px;
+background: white;
+color:black;
+
+
+
+margin-bottom: 20px;
+
+
+
+}
+
+
+.contact-grid h2{
+ 
+ font-family: 'Anton' , sans-serif;
+
+
+
+}
+
+.contact-grid p{
+
+font-family: 'Oxygen' , sans-serif;
+font-weight: bold;
+
+}
+
+
+
+.contact-grid hr {
+
+border-top:5px dotted black;
+
+margin:auto;
+width:50%;
+}
+
+
+.contact-list i {
+
+font-size: 60px;
+padding-right:1em;
+
+
+
+
+}
+
+
+
+/* resume grid  */
+
+
+.right-side{
+	border-radius: 20px;
+
+background:#27221F;
+color: white;
+padding-left: 20px;
+
+font-weight: bold;
+
+
+
+}
+
+
+.left-side{
+	padding-left: 20px;
+
+background-color:#F2202B;
+
+border-radius: 20px;
+color: white
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
