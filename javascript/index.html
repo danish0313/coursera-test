@@ -7,6 +7,11 @@
 <script src="angular.min.js"></script>
 <script src="app.js"></script>
     <style>
+
+
+  
+      
+
       .message { font-size: 1.3em; font-weight: bold; }
 
 
@@ -31,7 +36,7 @@ margin:10px;
 
 }
 .col-sm-4{
-  color:white;
+  color:black;
   
 background-color:grey;
   border-radius:100px;
@@ -70,6 +75,12 @@ margin-bottom:10px
   box-size: border-box;
   height:500px;
 background-color:brown;
+
+}
+
+input{
+  
+color:black !important;
 
 }
 
@@ -137,7 +148,6 @@ tr, th{
 
 <div class="row" ng-controller="controller1" >
 
-
 <div class="col-sm-4" >
 <center>
 <form class="form-horizental">
@@ -183,7 +193,16 @@ tr, th{
 
 <h1 style="text-align:center;color:white;">CHECKING YOUR CART!</h1>
 
+<input type="text" ng-model="name" ng-keyup="getname();">
 
+<input type="text" ng-model="all" ng-blur="upper();">
+<button class="three" ng-click="increments();"> increment me! </button>
+
+
+the value is {{increment}}<br>
+
+name: {{name}}<br>
+total number of name: {{count}}
 
 <ol>
 

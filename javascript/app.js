@@ -28,12 +28,64 @@ var array2=[];
 
 angular.module('myfirstapp',[]).controller('controller1',controller1);
 
-controller1.$inject= ['$scope'];
+controller1.$inject= ['$scope','$filter'];
 
-function controller1($scope) {
+function controller1($scope,$filter) {
+
+$scope.name="";
+$scope.count=0;
+
+
+$scope.getname= function (){
+	
+
+var tocount= countall($scope.name);
+
+
+$scope.count= tocount;
+
+};
+
+$scope.all="danish khan"
+
+
+$scope.upper= function (){
+
+
+	var filter = $filter('uppercase');
+
+  var real= filter($scope.all);
+
+
+
+$scope.all= real;
+
+};
+
+
+$scope.increment=0;
 
 $scope.itemss = array2;
 $scope.items = array;
+
+$scope.increments= function(){
+	
+	setTimeout(function() {
+		
+$scope.$apply(function(){
+	
+$scope.increment++;
+
+});
+
+
+
+	},2000);
+
+
+};
+
+
 
 $scope.show = function (){
 	
@@ -51,6 +103,26 @@ $scope.removes = function (index){
 
 
 };
+
+
+
+
+
+
+function countall(string){
+
+ var mycount=0;
+
+ for(var i= 0; i<string.length; i++){
+ 	
+mycount += string.charCodeAt(i);
+
+ }
+
+return mycount;
+
+};
+
 
 
 
@@ -88,13 +160,6 @@ return items;
 return itemss;
 
 }
-
-
-
-
-
-
-
 
 
 
